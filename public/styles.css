@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #c4d7e0;
+    width: 100%;
+    height: 100vh;
+  }
+  nav {
+    padding-top: 1rem;
+    background-color: #6e85b7;
+  }
+  .header {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #brandname {
+    text-align: center;
+  }
+  #getuser {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #f4e06d;
+    font-family: "Bungee", cursive;
+    font-size: 1.8rem;
+  }
+  button {
+    text-align: center;
+    width: 15%;
+    height: 80%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #f4e06d;
+    font-weight: bold;
+    color: #3ec70b;
+  }
+  button:hover {
+    box-shadow: 2px 2px 4px 2px #ffb562;
+  }
+  button:active {
+    opacity: 0.8;
+  }
+  .userCards {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+  }
+  .card {
+    text-align: center;
+    background-color: #8bbccc;
+    border-radius: 13%;
+    box-shadow: 5px 5px 5px #4c6793;
+    padding: 1rem 0;
+  }
+  
+  h2 {
+    padding: 0.5rem;
+    font-family: "IM Fell DW Pica SC", serif;
+    color: #9c2c77;
+  }
+  img {
+    box-shadow: 5px 5px 4px 2px #4c6793;
+    border-radius: 50%;
+  }
+  p {
+    font-family: "Share Tech Mono", monospace;
+    color: #cd104d;
+  }
+  .loader {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    border-top: dotted gray thick;
+    border-left: dotted gray thick;
+    border-radius: 50%;
+    animation: 1s infinite loading;
+  }
+  @keyframes loading {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
